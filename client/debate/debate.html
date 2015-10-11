@@ -1,0 +1,19 @@
+<template name="debate">
+    {{#if currentUser}}
+        {{#with debate}}
+            <div class="ui center aligned container">
+                <div class="ui grid">
+                    <div class="ten wide column"><h2>{{topic}}</h2></div>
+                    <div class="two wide column">{{> loginButtons}}</div>
+                </div>
+
+                <div class="ui grid">
+                    <div class="eight wide column">Side 1</div>
+                    <div class="eight wide column">Side 2</div>
+                </div>
+            </div>
+        {{/with}}
+    {{else}}
+        {{> loginButtons}}
+    {{/if}}
+</template>

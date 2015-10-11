@@ -22,3 +22,10 @@ semantic:ui
 flemay:less-autoprefixer
 meteorhacks:flow-router
 kadira:blaze-layout
+meteortoys:allthings
+accounts-ui
+accounts-password
+accounts-facebook
+accounts-github
+accounts-google
+accounts-twitter
