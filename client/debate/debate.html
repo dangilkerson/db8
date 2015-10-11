@@ -7,8 +7,25 @@
                 </div>
 
                 <div class="ui grid">
-                    <div class="eight wide column">{{sidea.title}}</div>
-                    <div class="eight wide column">{{sideb.title}}</div>
+                    {{#with sidea}}
+                        <div class="eight wide column">
+                            <div>{{title}}</div>
+                            {{#each pros}}
+                                <div>{{this}}</div>
+                            {{/each}}
+                            <div>{{> addPro}}</div>
+                        </div>
+                    {{/with}}
+
+                    {{#with sideb}}
+                        <div class="eight wide column">
+                            <div>{{title}}</div>
+                            {{#each pros}}
+                                <div>{{this}}</div>
+                            {{/each}}
+                            <div>{{> addPro}}</div>
+                        </div>
+                    {{/with}}
                 </div>
             </div>
         {{/with}}

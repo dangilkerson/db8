@@ -14,4 +14,14 @@ Debates.allow({
 
 Meteor.publish("debate", function(id){
     return Debates.find({_id : id});
-})
+});
+
+Meteor.methods({
+    'addPro': function(id, side, pro) {
+        var proForSide = {};
+        proForSide[side + ".pros"] = pro;
+        Debates.update({_id: id}, {
+            $push: proForSide
+        })
+    }
+});
