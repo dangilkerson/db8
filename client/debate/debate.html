@@ -3,7 +3,17 @@
         {{#with debate}}
             <div class="ui center aligned container">
                 <div class="ui grid">
-                    <div class="sixteen wide column"><h2>{{topic}}</h2></div>
+                    <div class="fourteen wide column"><h2>{{topic}}</h2></div>
+                    <div class="two wide column right aligned">
+                        <div class="ui right pointing dropdown icon button">
+                        <i class="settings icon"></i>
+
+                        <div class="menu">
+                            <div class="ui left search icon input item">
+                                {{> QrCode text=url }}
+                            </div>
+                        </div>
+                    </div></div>
                 </div>
 
                 <div class="ui grid">
