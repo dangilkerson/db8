@@ -1,8 +1,8 @@
 FlowRouter.route('/:debateId', {
-    /*subscriptions: function(params, queryParams) {
-     this.register('debate', Meteor.subscribe('debate', params.debateId));
-     }*/
-    action: function(params) {
+    subscriptions: function (params, queryParams) {
+        this.register('debate', Meteor.subscribe('debate', params.debateId));
+    },
+    action: function (params) {
         BlazeLayout.render("layout", {
             content: "debate"
         });
@@ -10,7 +10,7 @@ FlowRouter.route('/:debateId', {
 });
 
 FlowRouter.route('/', {
-    action: function(params) {
+    action: function (params) {
         BlazeLayout.render("layout", {
             content: "guest"
         });
