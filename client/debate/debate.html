@@ -7,12 +7,14 @@
                 </div>
 
                 <div class="ui grid">
-                    <div class="eight wide column">Side 1</div>
-                    <div class="eight wide column">Side 2</div>
+                    <div class="eight wide column">{{sidea.title}}</div>
+                    <div class="eight wide column">{{sideb.title}}</div>
                 </div>
             </div>
         {{/with}}
     {{else}}
-        {{> loginButtons}}
+        <script>
+            $(".login-link-text").click()
+        </script>
     {{/if}}
 </template>

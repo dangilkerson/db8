@@ -43,6 +43,7 @@ geojson-utils@1.0.4
 github@1.1.4
 google@1.1.6
 gwendall:body-events@0.1.6
+gwendall:form2js@0.1.3
 hot-code-push@1.0.0
 html-tools@1.0.5
 htmljs@1.0.5

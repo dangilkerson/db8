@@ -1,10 +1,22 @@
 <template name="guest">
     <div class="ui container">
-        <div class="ui fluid input">
-            <input class="topic" type="text" placeholder="Topic to debate"/>
-            <button class="debate button">
-                Start Debate
-            </button>
-        </div>
+        <form>
+            <div class="ui grid">
+                <div class="row ui fluid input">
+                    <input name="topic" type="text" placeholder="Topic to debate"/>
+                </div>
+                <div class="row ui fluid input">
+                    <div class="eight wide column">
+                        <input name="sidea.title" type="text" placeholder="Side A"/>
+                    </div>
+                    <div class="eight wide column">
+                        <input name="sideb.title" type="text" placeholder="Side B"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <input class="button" type="submit" value="Start Debate"/>
+                </div>
+            </div>
+        </form>
     </div>
 </template>
