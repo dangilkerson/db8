@@ -1,4 +1,11 @@
 <template name="layout">
+    <header>
+        <div class="ui grid">
+            <div class="fourteen wide column"><h1>DB8</h1></div>
+            <div class="two wide right aligned column">{{> loginButtons align="right"}}</div>
+        </div>
+    </header>
+
     <main>
         {{>Template.dynamic template=content}}
     </main>
